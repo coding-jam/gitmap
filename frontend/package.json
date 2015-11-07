@@ -1,0 +1,46 @@
+{
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "bootstrap": "github:twbs/bootstrap@^3.3.5",
+      "clean-css": "npm:clean-css@^3.3.7",
+      "css": "github:systemjs/plugin-css@^0.1.13",
+      "events": "github:jspm/nodelibs-events@^0.1.1",
+      "flux": "npm:flux@2.0.1",
+      "gmaps": "npm:gmaps@^0.4.18",
+      "highslide-software/highcharts-release": "github:highslide-software/highcharts-release@^4.1.7",
+      "highslide-software/highmaps-release": "github:highslide-software/highmaps-release@^1.1.7",
+      "jquery": "github:components/jquery@^2.1.4",
+      "lodash": "npm:lodash@^3.10.0",
+      "q": "npm:q@^2.0.3",
+      "react": "npm:react@0.13.3",
+      "react-bootstrap": "npm:react-bootstrap@^0.25.0-alpha.0",
+      "react-redux": "npm:react-redux@^1.0.1",
+      "react-router": "npm:react-router@0.13.3",
+      "redux": "npm:redux@2.0.0",
+      "redux-logger": "npm:redux-logger@1.0.0",
+      "redux-thunk": "npm:redux-thunk@^0.1.0",
+      "sweetalert": "npm:sweetalert@^1.1.0",
+      "url": "github:jspm/nodelibs-url@^0.1.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@5.8.22",
+      "babel-runtime": "npm:babel-runtime@5.8.22",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  },
+  "devDependencies": {
+    "del": "1.2.0",
+    "gulp": "3.9.0",
+    "gulp-connect": "2.2.0",
+    "gulp-rename": "1.2.2",
+    "gulp-shell": "0.4.2",
+    "jspm": "^0.15.7"
+  },
+  "dependencies": {
+    "proxy-middleware": "^0.13.0"
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  }
+}
