@@ -13,7 +13,7 @@
 Accedere in ssh con 
 
 ```
-ssh 5586c2db4382ec80300000bc@nodejs-gitmap.rhcloud.com
+ssh 563e94807628e12f2b00013d@nodejs-gitmap.rhcloud.com
 ```
 
 File di log:
