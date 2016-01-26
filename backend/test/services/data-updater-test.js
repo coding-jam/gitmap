@@ -14,31 +14,26 @@ describe('Data updater test suite', function () {
 
         it('expect return all italian user', function (done) {
 
-            var toArray = updater.selectUserByCountry('it')
-                .then(function (cursor) {
-                    return cursor.limit(5).toArray();
-
-                })
-                .then(function (array) {
-                    expect(array).to.be.not.empty;
-                    return array;
-                })
-                .then(console.log)
-                .then(done);
+            var subject = updater.selectUserByCountry('it')
+            subject.subscribe(function (user) {
+                expect(user).to.be.not.null;
+            })
+            subject.subscribe(console.log)
+            subject.subscribeOnCompleted(done);
 
         });
     });
 
-    describe.only('Learning RX', function () {
+    describe('Learning RX', function () {
 
         it('test RX', function (done) {
 
             var times = 0;
             var subject = updater.selectUserByCountry('it');
             subject.subscribe(function (user) {
-                    console.log(user);
-                    console.log(times++);
-                });
+                console.log(user);
+                console.log(times++);
+            });
             subject.subscribeOnCompleted(done);
         });
 
